@@ -113,3 +113,12 @@ report(
   open = TRUE
 )
 
+
+# Adding new aggrements back to first dataset ------------------------------
+
+
+
+# Load out included ids 
+
+included_ids_for_eppi <- 
+  paste(answer_dat$eppi_id[answer_dat$decision_binary == 1], collapse = "; ")

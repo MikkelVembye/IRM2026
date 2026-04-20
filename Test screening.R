@@ -1,5 +1,8 @@
 # Test screening 
 
+# worstcase scenario having no internet
+
+
 #install.packages("AIscreenR")
 #install.packages("remotes")
 remotes::install_github("MikkelVembye/AIscreenR", build_vignettes = TRUE)
@@ -48,11 +51,13 @@ ris_dat_incl <-
   )
 
 ## This data will be used for full-scale screening
+
 friends_dat <- 
   bind_rows(ris_dat_excl, ris_dat_incl) |> 
   filter_out(is.na(abstract)) # Removing records with missing abstracts, as they cannot distort the screening performance
   
-#saveRDS(friends_dat, "friends_dat.rds")
+  
+saveRDS(friends_dat, "friends_dat.rds")
 
 friends_dat <- readRDS("friends_dat.rds")
 
@@ -113,7 +118,7 @@ EXCLUDE if ANY are true:
 "
 
 # Rate limit ------------------------
-rate_limits <- rate_limits_per_minute(model = model_prizes$model)
+rate_limits <- rate_limits_per_minute(c("gpt-4o-mini", "gpt-5.1"))
 rate_limits
 
 # Approximate prize ------------------------------
@@ -125,8 +130,8 @@ app_prize <-
     studyid = eppi_id, # The column in the dataset that contains the study IDs
     title = title, # The column in the dataset that contains the study titles
     abstract = abstract,
-    model = c("gpt-4o-mini", "gpt-5.1"), # The model to use for screening
-    reps = 1
+    model = c("gpt-4o-mini", "gpt-4o-mini", "gpt-5.1"), # The model to use for screening
+    reps = c(1, 10, 1)
 )
 
 app_prize$price_data
@@ -139,13 +144,13 @@ plan(multisession)
 
 test_result_obj <- 
   AIscreenR::tabscreen_gpt(
-    data = test_dat[c(1:10, 101:110),], # The dataset containing the studies to be screened
+    data = test_dat, # The dataset containing the studies to be screened
     prompt = c(prompt1, prompt2), # The prompt defined above
     studyid = eppi_id, # The column in the dataset that contains the study IDs
     title = title, # The column in the dataset that contains the study titles
     abstract = abstract, # The column in the dataset that contains the study abstracts
-    model = c("gpt-4o-mini", "gpt-5.1"), # The model to use for screening (This is the default)
-    reps = c(10, 1),
+    model = c("gpt-4o-mini", "gpt-4o-mini", "gpt-5.1"), # The model to use for screening (gpt-4o-mini is the default)
+    reps = c(1, 10, 1),
     overinclusive = TRUE # Indicate if the model should be include studies where it is uncertain (Default is TRUE)
 ) 
 
@@ -166,3 +171,86 @@ performance <-
   )
 
 performance 
+
+# Final included study vs. low recall model -----------------
+
+final_included_ids <- 
+  read_ris_to_dataframe("Ris files/friends_final_included.ris") |> 
+  mutate(
+    across(c(author, title, abstract), ~ na_if(., ""))
+  ) |> 
+  filter_out(is.na(abstract)) |> 
+  pull(eppi_id)
+
+test_dat_with_results <- 
+  test_result_obj$answer_data_aggregated |> 
+  mutate(
+    included_final_review = if_else(eppi_id %in% final_included_ids, 1, 0)
+  )
+
+test_dat_with_results |> 
+  filter_out(model == "gpt-4o-mini") |>
+  filter(included_final_review == 1 & promptid == 1) |> 
+  select(eppi_id, included_final_review, final_decision_gpt_num) |> 
+  View()
+
+## CONCLUSION: HUMANS TEND TO BE RATHER OVERINCLUSIVE IN THIER SCREENING BEHAVIOR
+
+# Getting detailed responses from disaggrements ------------------
+
+prompt2_gpt5_dis_dat <- 
+  test_result_obj$answer_data_aggregated |> 
+  filter(model == "gpt-5.1", promptid == 1) |> 
+  filter(human_code != final_decision_gpt_num) 
+
+tic() 
+plan(multisession)
+
+gpt5.1_dis_object <- 
+  AIscreenR::tabscreen_gpt(
+    data = prompt2_gpt5_dis_dat, # The dataset containing the studies to be screened
+    prompt = prompt2, # The prompt defined above
+    studyid = eppi_id, # The column in the dataset that contains the study IDs
+    title = title, # The column in the dataset that contains the study titles
+    abstract = abstract, # The column in the dataset that contains the study abstracts
+    model = "gpt-5.1", # The model to use for screening (gpt-4o-mini is the default)
+    reps = 1,
+    decision_description = TRUE,
+    overinclusive = TRUE # Indicate if the model should be include studies where it is uncertain (Default is TRUE)
+) 
+
+plan(sequential)
+toc()
+
+#save(gpt5.1_dis_object, file = "screen objects/gpt5.1_dis_object.RData")
+#load("screen objects/gpt5.1_dis_object.RData")
+
+# Understand the screening behavior of gpt-5.1 on the discrepancies with human decisions -----------------
+
+report(
+  data = gpt5.1_dis_object$answer_data,
+  studyid = eppi_id,
+  title = title,
+  abstract = abstract,
+  gpt_answer = detailed_description,
+  human_code = human_code,
+  final_decision_gpt_num = decision_binary,
+  file = "disagreement_report_for_testing",
+  format = "html",
+  document_title = "Screening Disagreement Review (Testing)",
+  open = TRUE
+)
+
+
+#save(
+#  rate_limits,
+#  test_result_obj,
+#  gpt5.1_dis_object,
+#  file = "screen objects/worst_case_objects.RData"
+#)
+
+#ids <- 
+#  test_result_obj$answer_data_aggregated |> 
+#  filter(model == "gpt-4o-mini", reps == 1, promptid == 2, final_decision_gpt_num == 1) |> 
+#  pull(eppi_id) |> 
+#  paste(collapse = ", ")
