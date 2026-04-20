@@ -118,7 +118,12 @@ report(
 
 
 
-# Load out included ids 
 
-included_ids_for_eppi <- 
-  paste(answer_dat$eppi_id[answer_dat$decision_binary == 1], collapse = "; ")
+
+# Preparing for EPPI - relevant for you? -----------------
+
+#ids <- 
+#  test_result_obj$answer_data_aggregated |> 
+#  filter(model == "gpt-4o-mini", reps == 1, promptid == 2, final_decision_gpt_num == 1) |> 
+#  pull(eppi_id) |> 
+#  paste(collapse = ", ")

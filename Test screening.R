@@ -1,11 +1,12 @@
 # Test screening 
 
 # worstcase scenario having no internet
+load("screen objects/worst_case_objects.RData")
 
 
 #install.packages("AIscreenR")
 #install.packages("remotes")
-remotes::install_github("MikkelVembye/AIscreenR", build_vignettes = TRUE)
+#remotes::install_github("MikkelVembye/AIscreenR", build_vignettes = TRUE)
 
 library(AIscreenR)
 library(tidyverse)
@@ -41,6 +42,9 @@ ris_dat_excl <-
   )
 toc()
 
+#saveRDS(ris_dat_excl, "Data/ris_dat_excl.rds")
+ris_dat_excl <- readRDS("Data/ris_dat_excl.rds")
+
 ris_dat_incl <- 
   read_ris_to_dataframe("Ris files/friends_incl.ris") |> 
   as_tibble() |>
@@ -50,6 +54,10 @@ ris_dat_incl <-
     across(c(author, title, abstract), ~ na_if(., ""))
   )
 
+#saveRDS(ris_dat_incl, "Data/ris_dat_incl.rds")
+#ris_dat_incl <- readRDS("Data/ris_dat_incl.rds")
+
+
 ## This data will be used for full-scale screening
 
 friends_dat <- 
@@ -57,9 +65,8 @@ friends_dat <-
   filter_out(is.na(abstract)) # Removing records with missing abstracts, as they cannot distort the screening performance
   
   
-saveRDS(friends_dat, "friends_dat.rds")
-
-friends_dat <- readRDS("friends_dat.rds")
+#saveRDS(friends_dat, "Data/friends_dat.rds")
+#friends_dat <- readRDS("Data/friends_dat.rds")
 
 # Creating the test dataset for screening -----------------
 
@@ -123,7 +130,7 @@ rate_limits
 
 # Approximate prize ------------------------------
 
-app_prize <- 
+app_prize_test <- 
   approximate_price_gpt(
     data = test_dat, # The dataset containing the studies to be screened
     prompt = c(prompt1, prompt2), # The prompt defined above
@@ -134,8 +141,8 @@ app_prize <-
     reps = c(1, 10, 1)
 )
 
-app_prize$price_data
-app_prize$price_dollar
+app_prize_test$price_data
+app_prize_test$price_dollar
 
 # Run test screening ------------------------------
 
@@ -242,15 +249,28 @@ report(
 )
 
 
+# Approximate prize for full screening with gpt-4o-mini --------------------------------------------
+prompt <- prompt2
+
+app_prize_full <- 
+  approximate_price_gpt(
+    data = friends_dat, # The dataset containing the studies to be screened
+    prompt = prompt, # The prompt defined above
+    studyid = eppi_id, # The column in the dataset that contains the study IDs
+    title = title, # The column in the dataset that contains the study titles
+    abstract = abstract,
+    model = "gpt-4o-mini", # The model to use for screening
+    reps = 1
+)
+
+app_prize_full$price_data
+app_prize_full$price_dollar
+
+
+
 #save(
 #  rate_limits,
 #  test_result_obj,
 #  gpt5.1_dis_object,
 #  file = "screen objects/worst_case_objects.RData"
 #)
-
-#ids <- 
-#  test_result_obj$answer_data_aggregated |> 
-#  filter(model == "gpt-4o-mini", reps == 1, promptid == 2, final_decision_gpt_num == 1) |> 
-#  pull(eppi_id) |> 
-#  paste(collapse = ", ")
