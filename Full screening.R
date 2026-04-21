@@ -1,11 +1,20 @@
 # Full screening
 
+## worst case scenario having no internet
+## load("screen objects/friends_worstcase.RData")
+
 library(AIscreenR)
 library(tidyverse)
 library(future) 
 library(tictoc)
 
-# Add options
+# Options
+options(scipen = 100)
+#options(pillar.sigfig = 4) # ensure tibble include 4 digits
+#options(tibble.width = Inf)
+options(dplyr.print_min = 100)
+options(dplyr.summarise.inform = FALSE) # Avoids summarize info from tidyverse
+
 
 friends_dat <- readRDS("Data/friends_dat.rds")
 
@@ -46,19 +55,23 @@ result_obj <-
 
 plan(sequential)
 
-# Timing (not strictly needed just nice information to show you)
+## Timing (not strictly needed just nice information to show you)
 t <- toc()
 elapsed <- t$toc - t$tic
 cat(sprintf("%d minutes and %d seconds\n", as.integer(elapsed %/% 60), as.integer(elapsed %% 60)))
 
-# Save the data
+## Save the data
 save(result_obj, file = "screen objects/friends_screening_full.RData")
 
-answer_dat <- result_obj$answer_data
+result_dat <- result_obj$answer_data
 
-# Exact model used and run date for RAISE
-model_info <- answer_dat$submodel |> unique()
+## Exact model used and run date for RAISE
+model_info <- result_dat$submodel |> unique()
 model_info
+
+## Time 
+run_date <- result_dat$run_date |> unique()
+run_date
 
 performance <- 
   result_obj |> 
@@ -71,10 +84,10 @@ performance <-
 
 performance 
 
-# Get description of discrepancies
+## Re-screen discrepancies to get descriptions 
 
 discrepancies_dat <- 
-  answer_dat |>
+  result_dat |>
   filter(decision_binary != human_code)
 
 tic()
@@ -84,7 +97,7 @@ result_obj_with_descriptions <-
   AIscreenR::tabscreen_gpt(
     data = discrepancies_dat, # The dataset containing the studies to be screened
     prompt = prompt, # The prompt defined above
-    studyid = studyid, # The column in the dataset that contains the study IDs
+    studyid = eppi_id, # The column in the dataset that contains the study IDs
     title = title, # The column in the dataset that contains the study titles
     abstract = abstract, # The column in the dataset that contains the study abstracts
     model = "gpt-5.1", # The model to use for screening
@@ -95,40 +108,70 @@ result_obj_with_descriptions <-
 plan(sequential)
 toc()
 
+agreement_2round <- 
+  result_obj_with_descriptions$answer_data |> 
+  filter(decision_binary == human_code) 
 
+final_result_dat <- 
+  result_dat |> 
+  rows_update(
+    select(agreement_2round, -detailed_description), 
+    by = "eppi_id"
+  )
 
-disagreements2 <- 
+#final_result_dat |> 
+#  filter(eppi_id %in% agreement_2round$eppi_id) |> 
+#  View()
+
+# Making screening report for disagreements
+
+final_disagreements <- 
   result_obj_with_descriptions$answer_data |> 
   filter(decision_binary != human_code) 
 
-#saveRDS(disagreements2, "disagreements_with_descriptions.rds")
-
-
 report(
-  data = disagreements2,
-  studyid = studyid,
+  data = final_disagreements,
+  studyid = eppi_id,
   title = title,
   abstract = abstract,
   gpt_answer = detailed_description,
   human_code = human_code,
   final_decision_gpt_num = decision_binary,
-  file = "disagreement_report",
-  format = "html",
+  file = "full_disagreement_report",
+  format = "docx",
   document_title = "Screening Disagreement Review",
-  open = TRUE
+  open = TRUE,
+  directory = paste0(getwd(), "/Screening reports")
 )
-
-
-# Adding new aggrements back to first dataset ------------------------------
-
-
-
 
 
 # Preparing for EPPI - relevant for you? -----------------
 
-#ids <- 
-#  test_result_obj$answer_data_aggregated |> 
-#  filter(model == "gpt-4o-mini", reps == 1, promptid == 2, final_decision_gpt_num == 1) |> 
-#  pull(eppi_id) |> 
-#  paste(collapse = ", ")
+included_ids <- 
+  final_result_dat |> 
+  filter(decision_binary == 1) |> 
+  pull(eppi_id) |> 
+  paste(collapse = ", ")
+
+# Generate RIS file with included studies
+
+raw_friends_dat <- readRDS("Data/raw_friends_dat.rds")
+
+included_dat_for_ris <- 
+  raw_friends_dat |> 
+  filter(
+    eppi_id %in% final_result_dat$eppi_id[final_result_dat$decision_binary == 1]
+  ) |> 
+  select(-human_code) # Removing human code to avoid confusion 
+
+
+save_dataframe_to_ris(
+  included_dat_for_ris,
+  file = "Ris files/final_included_by_gpt_studies.ris"
+)
+
+#save(
+#  result_obj, 
+#  result_obj_with_descriptions,
+#  file = "screen objects/friends_worstcase.RData"
+#)

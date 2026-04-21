@@ -46,7 +46,7 @@ result_obj <-
 plan(sequential)
 
 # Timing (not strictly needed just nice information to show you)
-t <- toc()
+t <- toc(quiet = TRUE)
 elapsed <- t$toc - t$tic
 cat(sprintf("%d minutes and %d seconds\n", as.integer(elapsed %/% 60), as.integer(elapsed %% 60)))
 

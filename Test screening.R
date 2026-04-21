@@ -8,6 +8,7 @@
 #install.packages("remotes")
 #remotes::install_github("MikkelVembye/AIscreenR", build_vignettes = TRUE)
 
+## Load relevant packages
 library(AIscreenR)
 library(tidyverse)
 library(future) 
@@ -15,7 +16,12 @@ library(readxl)
 library(tictoc)
 library(usethis) 
 
+## Options
 options(scipen = 100)
+#options(pillar.sigfig = 4) # ensure tibble include 4 digits
+#options(tibble.width = Inf)
+options(dplyr.print_min = 20)
+options(dplyr.summarise.inform = FALSE) # Avoids summarize info from tidyverse
 
 # Open vignette to AIscreenR
 #vignette("Using-GPT-API-Models-For-Screening", package = "AIscreenR")
@@ -35,7 +41,6 @@ tic()
 ris_dat_excl <- 
   read_ris_to_dataframe("Ris files/friends_excl.ris") |> # Add the path to your RIS file here
   as_tibble() |>
-  select(author, eppi_id, title, abstract) |> # Using only relevant variables
   mutate(
     human_code = 0, #Tracking the human decision
     across(c(author, title, abstract), ~ na_if(., "")) # Handling missing values  
@@ -48,11 +53,11 @@ ris_dat_excl <- readRDS("Data/ris_dat_excl.rds")
 ris_dat_incl <- 
   read_ris_to_dataframe("Ris files/friends_incl.ris") |> 
   as_tibble() |>
-  select(author, eppi_id, title, abstract) |>
   mutate(
     human_code = 1, #Tracking the human decision
     across(c(author, title, abstract), ~ na_if(., ""))
   )
+
 
 #saveRDS(ris_dat_incl, "Data/ris_dat_incl.rds")
 #ris_dat_incl <- readRDS("Data/ris_dat_incl.rds")
@@ -62,11 +67,19 @@ ris_dat_incl <-
 
 friends_dat <- 
   bind_rows(ris_dat_excl, ris_dat_incl) |> 
+  select(author, eppi_id, title, abstract, human_code) |> # Using only relevant variables
   filter_out(is.na(abstract)) # Removing records with missing abstracts, as they cannot distort the screening performance
   
-  
-#saveRDS(friends_dat, "Data/friends_dat.rds")
-#friends_dat <- readRDS("Data/friends_dat.rds")
+## Data used for full screening  
+saveRDS(friends_dat, "Data/friends_dat.rds")
+
+## Raw data used to convert relevant records back to RIS format 
+raw_friends_dat <- 
+  bind_rows(ris_dat_excl, ris_dat_incl) 
+
+saveRDS(raw_friends_dat, "Data/raw_friends_dat.rds")
+
+rm(raw_friends_dat)
 
 # Creating the test dataset for screening -----------------
 

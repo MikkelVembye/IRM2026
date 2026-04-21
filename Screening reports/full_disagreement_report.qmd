@@ -1,0 +1,368 @@
+---
+title: " Screening Disagreement Review "
+subtitle: " Disagreement between humans and GPT "
+format:
+   docx  
+---
+
+#### **Disagreements**
+
+##### **False exclusion**
+
+**STUDY-ID: 91011175:**
+
+-- **Title:** 'Social Validity Evaluation of the FRIENDS for Life Program with Mexican Children'
+
+-- **Abstract**: 'This study is the first social validity evaluation of the Spanish version of the  FRIENDS for Life  program with Mexican children.  FRIENDS for Life  is a cognitive-behavioral intervention aimed at increasing social and emotional competence and decreasing anxiety and depressive symptoms in children. The program is designed to empower children and families by teaching relaxation techniques, coping and interpersonal skills, and positive thinking. Participants were 498 students, ages 9 to 11. Upon completion of the program, students, parents, and teachers were surveyed regarding their perceptions on the utility and enjoyability, and their global satisfaction. Results indicate that students, parents, and teachers evaluate the program as helpful and enjoyable. Gender differences were found, girls reported the program as more useful and enjoyable than boys. The skill that students and parents found more useful was changing negative thoughts into positive, and positive correlations were also found between level of satisfaction and outcome measures.'
+
+-- **Answer (GPT)**: The intervention is clearly a FRIENDS for Life program (criterion A met). However, the study described in the abstract is explicitly a social validity evaluation focusing on perceptions of utility, enjoyability, and satisfaction among students, parents, and teachers. While the background notes that FRIENDS aims to decrease anxiety and depressive symptoms, the abstract does not state that anxiety, depression, or internalizing/emotional coping outcomes were actually measured or analyzed in this study. The mention of “positive correlations…between level of satisfaction and outcome measures” does not specify that these outcome measures are anxiety/internalizing or emotional-coping constructs, and the only clearly described outcomes are satisfaction-related. Thus, based on the abstract, the study appears to focus solely on non-symptom outcomes (social validity) without clear evidence of measurement of anxiety or internalizing symptoms, fitting exclusion criterion 4. Therefore, it should be excluded (decision = 0).
+
+-- **Answer (GPT - numeric)**: 0
+
+-- **Answer (Human)**: 1
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+
+##### **False inclusion**
+
+**STUDY-ID: 91154422:**
+
+-- **Title:** 'Wie wirksam ist ein begleitendes elterntraining in der prävention von angst und depression bei kindern? = Prevention of childhood anxiety and depression: Efficacy of an additional parent training program'
+
+-- **Abstract**: 'Background: Anxiety and depression are among the most common disorders in children and adolescents, and are associated with substantial psychosocial impairment. Cognitive behavioral prevention programs have been proven to be effective, but the benefit to children varies considerably. Parental behavior seems to be a promising moderator of a program’s success. Parent training programs are aimed at modifying such parental behaviors. The aim of our study is to explore the efficacy of an additional parent training program in the prevention of anxiety and depression in 8- to 12-year-old children. Patients and Methods: Applying a modified version of the FRIENDS program, adapted for the indicated prevention, 70 children were randomized to the groups ‘prevention’ or ‘prevention + parent training’. Using a MANOVA, dependent variables encompassing the Child Behavior Checklist, the Spence Children’s Anxiety Scale, and the Depression Inventory for Children and Adolescents were analyzed. Results: An additional parent training program yielded no incremental effects to the children’s preventive program at post-treatment. Children whose parents displayed higher rates of psychopathology responded better to the program—whether or not parents took part in the training program. In addition, the parents of all children reported greater competence in handling their child. Discussion: Positive parental evaluation of the training program and high attendance rates did not seem to correspond with short-term symptom reduction in the children. Possibly children’s participation in the prevention program may cause the parents to perceive greater competence. Long-term outcomes have to be investigated. (PsycINFO Database Record (c) 2016 APA, all rights reserved)'
+
+-- **Answer (GPT)**: Include (1). Criterion A is met because the study explicitly uses a modified version of the FRIENDS program for indicated prevention, which is clearly a FRIENDS-family intervention. Criterion B is met because the outcomes include validated measures of anxiety and depression (Spence Children’s Anxiety Scale, Depression Inventory for Children and Adolescents, and Child Behavior Checklist internalizing). The design is randomized with two arms (prevention vs prevention + parent training), so it is not a single-group pre-post study. It is an empirical outcome evaluation rather than a review or conceptual paper. Therefore, the study fits the inclusion criteria for FRIENDS-family interventions assessing anxiety/internalizing outcomes with a comparison group.
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91152789:**
+
+-- **Title:** 'Prevention of childhood anxiety and depression: efficacy of an additional parent training program'
+
+-- **Abstract**: 'Background: Anxiety and depression are among the most common disorders in children and adolescents, and are associated with substantial psychosocial impairment. Cognitive behavioral prevention programs have been proven to be effective, but the benefit to children varies considerably. Parental behavior seems to be a promising moderator for a program s success. Parent trainingsessions are aimed at modifying such parental behaviors. The aim of our study is to explore the efficacy of an additional parent training program in the prevention of anxiety and depression in 8‐to 12‐year‐old children. Patients and Methods: Applying a modified version of the FRIENDS program, adapted for the indicated prevention, 70 children were randomized to the groups  prevention  or  prevention + parent training . Using a MANOVA, dependent variables encompassing the Child Behavior Checklist, the Spence Children s Anxiety Scale, and the Depression Inventory for Children and Adolescents were analyzed. Results: An additional parent training program yielded no incremental effects to the children s prevention program at post‐treatment. Children whose parents displayed higher rates of psychopathology responded better to the program ‐ whether or not parents took part in the training program. In addition, the parents of all children reported greater competence in handling their child. Discussion: Positive parental evaluation of the training and high attendance rates did not seem to correspond with shortterm symptom reduction in the children. Possibly children s participation in the prevention program may cause the parents to perceive greater competence. Long‐term outcomes have yet to be investigated. © 2010 S. Karger AG, Basel.'
+
+-- **Answer (GPT)**: Include. Criterion A is satisfied because the intervention is explicitly described as a modified version of the FRIENDS program, adapted for indicated prevention, which clearly links it to the FRIENDS-family suite of CBT-based anxiety prevention programs. Criterion B is satisfied because the study explicitly measures anxiety and depression outcomes using validated instruments (Spence Children’s Anxiety Scale and the Depression Inventory for Children and Adolescents), as well as internalizing-related behavior via the Child Behavior Checklist. It is an empirical randomized study comparing two FRIENDS-based conditions (child prevention vs. child prevention + parent training), so it is not a single-arm pre–post design. The focus is on prevention of anxiety and depression symptoms, with symptom outcomes clearly reported. Therefore, it meets all inclusion criteria and none of the exclusion criteria.
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91152792:**
+
+-- **Title:** 'Effectiveness of cognitive-behavioral anxiety treatments for children and adolescents'
+
+-- **Abstract**: 'There is substantial evidence that cognitive behavioral therapy (CBT) works for child anxiety disorders, but this evidence‐base mainly rests on efficacy trials with rigorous scientific control conducted in University‐clinics. Are results transferable to ordinary clinics? To a large extent, the answer seems to be yes. This presentation will review the state‐of‐the‐art of effectiveness trials for child anxiety disorders. Additionally, data will be presented from a large ongoing randomized controlled trial (RCT) for child anxiety disorders conducted in community child and adolescent mental health clinics in Norway. This is the child part of the Assessment and Treatment ‐ Anxiety in Children and Adults (ATACA) trial, PI s Heiervang and Havik. Children aged 8 to 15 years (N = 182) with a primary diagnosis of separation anxiety disorder, social phobia, or generalized anxiety disorder were included and randomized to group CBT (GCBT), individual CBT (ICBT) or a waitlist condition (WLC). The treatment program was Barrett s Friends for life manual. CBT outperformed WLC, with no major difference between GCBT and ICBT. Although overall symptom reduction was comparable to previous effectiveness trials, the full remission rates were somewhat lower than in previous trials. The possible reasons behind this will be discussed, and there will be an emphasis on how process factors such as pretreatment motivation, perceived treatment credibility, and the therapeutic alliance, which were all assessed in the RCT, may play a part to influence treatment results.'
+
+-- **Answer (GPT)**: Include. The intervention explicitly uses Barrett's Friends for Life manual, which is a FRIENDS-family program (criterion A met). The study is a randomized controlled trial for child anxiety disorders (separation anxiety, social phobia, generalized anxiety disorder) and reports on anxiety symptom reduction and remission rates (criterion B met). It is an empirical RCT with comparison groups (group CBT, individual CBT, waitlist), so it is not a single-arm pre-post study and does not fall under any exclusion criteria. Therefore, it should be included for further review.
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91153628:**
+
+-- **Title:** 'Effectiveness of CBT for youth anxiety disorders in mental health clinics'
+
+-- **Abstract**: 'Introduction: Efficacy studies of CBT for childhood anxiety disorders have found significant effects for up to 70% of the patients, but less is known about the effectiveness with youths in routine clinical care. We have therefore studied the effectiveness of the FRIENDS for Life program in seven child and adolescent mental health outpatient clinics in Western Norway. Method(s): Subjects were randomized to group or individual treatment, some with a preceding wait-list period with a mean duration equal to the treatment period of 10 weeks. A total of 183 referred youths aged 8-15 years with separation anxiety, generalized anxiety or social anxiety disorder were included. There were few exclusion criteria. Pre-, post- and 1 year follow-up assessments included the Anxiety Disorder Interview Schedule for children and parents, Spence Children s Anxiety Scale and the Short Mood and Feelings Questionnaire. Result(s): Significant improvement was observed both for individual and group treatment with regard to diagnostic status, anxiety symptoms and depressive symptoms, with little change after the wait-list period. Post-treatment around had recovered from their principal diagnosis. There was a moderate effect size on anxiety and depressive symptoms. Preliminary data show continuing effects at 1 year follow-up, with no significant effect of treatment format. Discussion(s): The study is one of the largest studies of CBT for anxiety in children carried out in regular clinics with regular clinicians. The FRIENDS for Life CBT program seems to be an effective treatment when delivered in ordinary clinical settings, with equal effects for individual and group formats. Conclusion(s): Manualised CBT is effective for childhood anxiety disorders in ordinary clinical care both at short- and long-term (1 year) and may be recommended for clinical use.'
+
+-- **Answer (GPT)**: The intervention is explicitly the FRIENDS for Life CBT program, satisfying criterion A. The study clearly measures anxiety and depressive symptoms and diagnostic status (e.g., Spence Children’s Anxiety Scale, ADIS, Short Mood and Feelings Questionnaire), satisfying criterion B. It is a randomized design with comparison between group and individual formats and includes a wait-list period, so it is not a single-group pre–post study. Outcomes focus on anxiety and depression, not solely on non-symptom constructs. Therefore, this study should be included (decision = 1).
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91152887:**
+
+-- **Title:** 'Evaluation of the Effectiveness of the  Friends for Life  Program on Children’s Anxiety and Depression'
+
+-- **Abstract**: 'INTERVENTION: Intervention 1: The children in the intervention group received the  Friends for Life  cognitive‐behavioral training program for eight 1 hour weekly sessions. Intervention 2: The control group received a standard treatment and they were placed in waiting list. The children in the intervention group received the  Friends for Life  cognitive‐behavioral training program for eight 1 hour weekly sessions. The control group received a standard treatment and they were placed in waiting list. Treatment ‐ Drugs Treatment ‐ Other CONDITION: Condition 1: Anxiety. Condition 2: Depression. ; Organic anxiety disorder ; Mild depressive episode Mild depressive episode Organic anxiety disorder PRIMARY OUTCOME: Children s Anxiety. Timepoint: Baseline, after the sessions and after 3 months. Method of measurement: RCMA: Revised Children s Manifest Anxiety. Children s Depression. Timepoint: Baseline. after the sessions and after 3 months. Method of measurement: Children s Depression Inventory. Depression, Anxiety, Stress. Timepoint: Baseline. after the sessions and after 3 months. Method of measurement: DASS: Depression, Anxiety, Stress. Strengths and Difficulties. Timepoint: Baseline, after the sessions and after 3 months. Method of measurement: SDQ: Strengths and Difficulties Questionnaire. INCLUSION CRITERIA: INCLUSION CRITERIA: Revised Children’s Manifest Anxiety &gt;17; Children s Depression Inventory =9‐35, the absence of other psychiatric disorders require medical treatment. Exclusion criteria: Absence rate as 2 or more educational sessions; lack of fulfillment or defects of the questionnaires; experience of recent stressful event (past 6 months)'
+
+-- **Answer (GPT)**: Include. Criterion A is met because the intervention is explicitly the "Friends for Life" cognitive-behavioral training program, which is a FRIENDS-family program. Criterion B is met because the study explicitly measures anxiety and depression outcomes (children's anxiety via RCMA, children's depression via CDI, and DASS, plus SDQ). It is an intervention with a control group (standard treatment/waitlist), not a single-arm pre-post study. Therefore, it meets inclusion criteria and none of the exclusion criteria apply.
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91152822:**
+
+-- **Title:** 'Investigating the effectiveness of a working memory training intervention to increase educational achievement and reduce anxiety in young people'
+
+-- **Abstract**: 'INTERVENTION: Young people will be randomly allocated to one of two interventions: 1. Group A will receive the CogMed working memory training as a school‐based intervention for 5 weeks 2. Group B will receive the FRIENDS CBT programme as a school‐based intervention for 5 weeks CONDITION: Anxiety ; Mental and Behavioural Disorders ; Anxiety PRIMARY OUTCOME: Performance on a non‐trained working memory measure.; Evaluated immediately preceding intervention, immediately following intervention (5 weeks after pre‐test) and 3 months after intervention SECONDARY OUTCOME: 1. Measures of academic achievement; 2. Anxiety and performance on broader measures of attention (inhibitory control in the presence and absence of threat‐related stimuli); Evaluated immediately preceding intervention, immediately following intervention (5 weeks after pre‐test) and 3 months after intervention INCLUSION CRITERIA: 1. Males and females 2. Aged between 12 and 14 years 3. Reporting high levels of generalised anxiety'
+
+-- **Answer (GPT)**: The intervention includes the FRIENDS CBT programme delivered as a school-based intervention, which clearly meets criterion A for being a FRIENDS-family intervention. The study evaluates anxiety outcomes (secondary outcome includes anxiety measures) in young people reporting high levels of generalized anxiety, thus fulfilling criterion B. It is a randomized allocation to two intervention groups (CogMed vs FRIENDS), so there is a comparison group and it is not a single-group pre-post design. Therefore, the study should be included (decision = 1).
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91154276:**
+
+-- **Title:** 'FRIENDS for life: Implementation of an indicated prevention program targeting childhood anxiety and depression in a naturalistic setting'
+
+-- **Abstract**: 'We assessed the implementation characteristics and children s appraisal of FRIENDS for Life, a school-based prevention program targeting childhood anxiety and depression, and its relation to program outcomes. Prevention workers delivered the program using specific therapeutic skills, but did not adhere completely to the protocol. However, this appeared not to negatively affect program outcomes. We found few other significant associations between program integrity and outcomes. Children s participation was good and they appraised the program positively. Children rated the program more positively when protocol adherence was lower. In conclusion, a highly protocolled intervention can be successfully transferred to daily school practice. (PsycINFO Database Record (c) 2018 APA, all rights reserved)'
+
+-- **Answer (GPT)**: The intervention is clearly FRIENDS for Life, a school-based CBT prevention program targeting childhood anxiety and depression, so criterion A is met. The abstract indicates that the program targets childhood anxiety and depression and discusses “program outcomes,” implying symptom-related outcomes are assessed, so criterion B is likely met. However, the design is unclear: the abstract focuses on implementation characteristics, program integrity, and children’s appraisal, and it does not explicitly state whether there is a comparison/control group or if it is a single-group pre–post study. Because single-group FRIENDS studies without a comparison group must be excluded, but the presence or absence of a control group cannot be determined from the abstract, there is insufficient information to confidently include or exclude. Therefore, the appropriate decision is uncertain (1.1).
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91011316:**
+
+-- **Title:** 'No Differences between Group versus Individual Treatment of Childhood Anxiety Disorders in a Randomised Clinical Trial'
+
+-- **Abstract**: 'Background: The present study compares an individual versus a group format in the delivery of manualised cognitive-behavioural therapy (FRIENDS) for children with anxiety disorders. Clinically referred children (aged 8 to 12) diagnosed with Separation Anxiety Disorder (n = 52), Generalised Anxiety Disorder (n = 37), Social Phobia (n = 22) or Specific Phobia (n = 16) were randomly assigned to individual (n = 65) or group (n = 62) treatment. Method: Analyses were conducted separately for the intent-to-treat sample and the sample of children who completed treatment. Analyses included chi-square comparisons and regression analyses with treatment format as a predictor. Results: Forty-eight percent of the children in the individual versus 41% in the group treatment were free of any anxiety disorder at post-treatment; 62% versus 54% were free of their primary anxiety disorder. Regression analyses showed no significant difference in outcome between individual and group treatment. Conclusions: Children improved in both conditions. Choice between treatments could be based on pragmatic considerations such as therapeutic resources, referral rates, and the preference of the parents and the child.'
+
+-- **Answer (GPT)**: Include. The intervention is explicitly described as manualised cognitive-behavioural therapy (FRIENDS) for children with anxiety disorders, which aligns with FRIENDS-family criteria (A). The study is a randomized clinical trial comparing individual versus group delivery formats, so it is not a single-group pre-post design (thus not excluded by criterion 2). Anxiety disorders and their remission (free of any anxiety disorder, free of primary anxiety disorder) are the primary outcomes, clearly meeting the requirement that anxiety/internalizing symptoms are evaluated (B). The paper reports empirical outcomes, not just conceptual or implementation data. Therefore it fits the inclusion criteria for FRIENDS-family intervention studies examining anxiety outcomes.
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91152853:**
+
+-- **Title:** 'Effectiveness Study of CBT for Anxiety in Children'
+
+-- **Abstract**: 'Cognitive behaviour therapy (CBT) has been shown to be an efficacious treatment for anxiety disorders in youths when delivered in university settings. However, there is a lack of studies evaluating the effectiveness of CBT in regular clinical settings. The current study will compare a CBT program developed for anxiety in youths (the FRIENDS program by Paula Barrett, Australia), with a wait‐list control condition. Group and individual treatment will also be compared in the study. Groups will be divided by age, with younger including 8‐12‐year‐olds, and older 12‐15‐year‐olds. Parents are also involved at the end of all therapy sessions, as well as in separate parent sessions. Assessment and treatment is delivered by clinicians working in seven outpatient clinics in Western Norway. There will be 10 therapy sessions, with booster sessions 4 and 12 weeks later. Effectiveness will be evaluated post‐treatment, and at 1 and 5 years follow‐up. The study will have a randomized design. Children randomized to the wait‐list condition will be offered treatment if they still meet inclusion criteria after the waiting period.'
+
+-- **Answer (GPT)**: Include. The intervention is explicitly the FRIENDS program by Paula Barrett, which meets criterion A for a FRIENDS-family intervention. The study is an empirical randomized controlled trial comparing FRIENDS CBT to a wait-list control, and it evaluates treatment effectiveness for youth anxiety disorders with follow-up, clearly meeting criterion B regarding anxiety/internalizing outcomes. It is not a single-group pre-post design, not a review, and does not restrict outcomes solely to implementation or non-symptom constructs. Therefore, it should be included (decision = 1).
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91152849:**
+
+-- **Title:** 'A Hybrid Effectiveness-Implementation Trial of Group CBT in Urban Schools'
+
+-- **Abstract**: 'Background/Purpose: This project will expand the capacity of selected mental health agencies to provide services in the participating schools through school therapeutic services (STS). The project will provide enhanced training in evidence‐based behavioral health interventions to school‐based mental health providers. The services will be implemented by STS Master s level therapists supervised by their mental health agency supervisors (Internal Support), who are in turn supported by the research team (TT) or external consultants (TT+). Population: 18 schools in Philadelphia will be chosen for participation. Students who present excessive anxiety in grades 4‐8 would be potentially eligible to participate in the interventions offered by the agencies  therapists in their school. Intervention: This study is designed to test: a) the effectiveness of an adapted version of a group cognitive behavioral therapy program (aFRIENDS) compared to the original version of this program (FRIENDS), and b) the effectiveness of two implementation support strategies for aFRIENDS: Train‐the‐Trainer and Train‐the‐Trainer Plus. aFRIENDS is a shorter, more culturally sensitive, focused, and feasible CBT for anxiety in children than FRIENDS and addresses one of the major barriers to implementation (intervention‐context fit). Design: Therapists and supervisors will be randomly assigned to one of three conditions: a) FRIENDS with Train‐the‐Trainer implementation strategy (i.e., Masters‐level supervisors receive training by experts on conducting supervision); b) aFRIENDS with Train‐the‐Trainer strategy; c) aFRIENDS using the Train‐the‐Trainer Plus strategy (i.e., supervisors receive training and consultation by experts on conducting supervision). Analyses: Effectiveness will be measured by comparing A to B; Implementation will be measured by comparing B to C. Agency therapists will conduct all treatment groups in the schools.'
+
+-- **Answer (GPT)**: Include. The intervention is explicitly FRIENDS and an adapted version (aFRIENDS), clearly meeting criterion A as a FRIENDS-family/derivative group CBT anxiety program delivered in schools. The trial evaluates effectiveness of aFRIENDS versus FRIENDS on anxiety outcomes in children with excessive anxiety, meeting criterion B regarding anxiety/internalizing outcomes. It is a randomized comparative effectiveness-implementation trial with multiple conditions, not a single-group pre-post design, so none of the exclusion criteria apply.
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91102363:**
+
+-- **Title:** 'Building Primary-School Children s Resilience through a Web-Based Interactive Learning Environment: Quasi-Experimental Pre-Post Study.'
+
+-- **Abstract**: 'BACKGROUND: Resilience is a person s mental ability to deal with challenging situations adaptively and is a crucial stress management skill. Psychological resilience and finding ways to cope in crises is a highly relevant topic considering the COVID-19 pandemic, which enforced quarantine, social distancing measures, and school closures worldwide. Parents and children are currently living with increased stress due to COVID-19. We need to respond with immediate ways to strengthen children s resilience. Internet-based cognitive behavioral therapy interventions for children s stress management overcome accessibility issues such as the inability to visit mental health experts owing to COVID-19 movement restrictions. An interactive learning environment was created, based on the preventive program  Friends,  to overcome accessibility issues associated with delivering cognitive behavioral therapy-based interventions in formal and informal education settings., OBJECTIVE: This study aimed to examine the effectiveness of a web-based learning environment on resilience in (1) reducing anxiety symptoms and (2) increasing emotion recognition and recognition of stress management techniques among 9-10-year-old children. We also aimed to evaluate the learning environment s usability., METHODS: A quasi-experimental pretest-posttest control group design was used. In total, 20 fourth graders in the experimental group interacted with the learning environment over 6 weekly 80-minute sessions. Further, 21 fourth graders constituted the control group. The main data sources were (1) a psychometric tool to measure children s anxiety symptoms, namely the Greek translation of the original Spence Children s Anxiety Scale, (2) 3 open-ended questions assessing emotion recognition and recognition of stress management techniques, and (3) the System Usability Scale to measure the usability of the learning environment., RESULTS: In both groups, there was a small but nonsignificant postintervention reduction in reported anxiety symptoms, except for obsessive-compulsive disorder symptoms in the experimental group. A paired samples t test revealed that students  reported symptom scores of obsessive-compulsive disorder significantly decreased from 1.06 (SD 0.68) to 0.76 (SD 0.61) (t19= 5.16; P=.01). The experimental group revealed a significant increase in emotion recognition (t19=-6.99; P&lt;.001), identification of somatic symptoms of stress (t19=-7.31; P&lt;.001), and identification of stress management techniques (t19=-6.85; P&lt;.001). The learning environment received a satisfactory usability score. The raw average system usability score was 76.75 (SD 8.28), which is in the 80th percentile rank and corresponds to grade B., CONCLUSIONS: This study shows that interactive learning environments might deliver resilience interventions in an accessible and cost-effective manner in formal education, potentially even in distance-learning conditions owing to the COVID-19 pandemic. Interactive learning environments on resilience are also valuable tools for parents who can use them with their children at home, for informal learning, using mobile devices. As such, they could be a promising first-step, low-intensity intervention that children and the youth can easily access. Copyright ©Iolie Nicolaidou, Evi Stavrou, Georgia Leonidou. Originally published in JMIR Pediatrics and Parenting (https://pediatrics.jmir.org), 09.06.2021.'
+
+-- **Answer (GPT)**: The intervention is explicitly described as an interactive learning environment created based on the preventive program "Friends," which clearly links it to the FRIENDS-family framework (criterion A satisfied). The study evaluates anxiety symptoms using the Spence Children’s Anxiety Scale and also assesses emotion recognition and recognition of stress management techniques, so it clearly measures anxiety and emotional/coping outcomes (criterion B satisfied). The design is a quasi-experimental pretest-posttest control group study with an experimental and a control group, so it is not a single-arm pre-post design and thus does not meet any exclusion criteria. Therefore, the study should be included (decision = 1).
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91011248:**
+
+-- **Title:** ' FRIENDS for Life : The Results of a Resilience-Building, Anxiety-Prevention Program in a Canadian Elementary School'
+
+-- **Abstract**: 'The purpose of the study in this article was to replicate past findings showing the effectiveness of a cognitive, behavioral resilience-building/anxiety-prevention program,  FRIENDS for Life.  The results of the controlled study of two Grade 4 classrooms in Canada (N = 52) indicate that all children reported reduced levels of anxiety regardless of receiving the FRIENDS program. Limitations of the study are discussed and future research concerning school counseling programs using evidence-based approaches is highlighted. (Contains 3 tables.)'
+
+-- **Answer (GPT)**: Include. Criterion A is met because the intervention is explicitly described as the FRIENDS for Life program, which is a FRIENDS-family CBT-based, school/group resilience-building and anxiety-prevention program. Criterion B is met because the study purpose is to examine the effectiveness of an anxiety-prevention program, and the results explicitly report reduced levels of anxiety, indicating that anxiety outcomes are measured. The design is a controlled study involving two Grade 4 classrooms (i.e., there is a comparison/control condition rather than a single-group pre-post only), so it does not fall under the exclusion for single-arm designs. It is an empirical outcome study rather than a review or conceptual paper, and outcomes clearly concern anxiety/internalizing symptoms. Therefore, the study should be included (decision = 1).
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91101938:**
+
+-- **Title:** 'Evaluating the FRIENDS Program: A Cognitive-Behavioral Group Treatment for Anxious Children and Their Parents.'
+
+-- **Abstract**: 'Conducted the 1st randomized clinical trial evaluating the efficacy of the FRIENDS program, a family-based group cognitive-behavioral treatment (FGCBT) for anxious children. Children (n = 71) ranging from 6 to 10 years of age who fulfilled diagnostic criteria for separation anxiety (SAD), generalized anxiety disorder (GAD), or social phobia (SOP) were randomly allocated to FRIENDS or to a 10-week wait-list control group. The effectiveness of the intervention was evaluated at posttreatment and 12-month follow-up. Results indicated that 69% of children who completed FGCBT were diagnosis-free, compared to 6% of children completing the wait-list condition. At 12-month follow-up, 68% of children were diagnosis-free. Beneficial treatment effects were also evident on the self-report measures completed by the children and their mothers. Parents and children reported high treatment satisfaction. Results suggest that FRIENDS is an effective treatment for clinically anxious children. Limitations of this study and directions for future research are discussed. [ABSTRACT FROM AUTHOR] Copyright of Journal of Clinical Child Psychology is the property of Taylor &amp; Francis Ltd and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder s express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)'
+
+-- **Answer (GPT)**: Include. The intervention is explicitly the FRIENDS program, described as a family-based group cognitive-behavioral treatment (FGCBT) for anxious children, which fits the FRIENDS-family criteria (A). The study clearly evaluates anxiety outcomes: participants met diagnostic criteria for separation anxiety disorder, generalized anxiety disorder, or social phobia; primary outcomes are being diagnosis-free and changes on self-report measures of anxiety/internalizing symptoms (B). The design is a randomized clinical trial comparing FRIENDS to a wait-list control group, so it is not a single-group pre-post study, and it directly evaluates clinical anxiety outcomes, not just non-symptom constructs. Therefore, it meets all inclusion criteria and does not meet any exclusion criteria.
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91153583:**
+
+-- **Title:** 'Effectiveness of CBT for anxiety disorders in western Norway child mental health clinics'
+
+-- **Abstract**: 'Introduction.- Efficacy studies of CBT for childhood anxiety disorders have found positive treatment effects for up to 70% of the patients, but little is known about the effect of this treatment in routine clinical care. The purpose of this study was to investigate the effectiveness of a manualised CBT program carried out in seven child mental health outpatient clinics in western Norway. Method.- The manual was the original group version of Barret s FRIENDS program, compared with an individual version and a wait list condition. The participants were 182 children, aged 8-15 with a principal diagnosis of separation, generalized, or social anxiety disorder. Pre-, post- and 1-year follow-up assessments included the Anxiety Disorder InterviewSchedule, the Spence Children s Anxiety Scale and the Short Mood and Feelings Questionnaire with both children and parents as informants. Results.- Results showed significant improvement both for diagnostic status, anxiety and depressive symptoms. The wait-list group did not change significantly on any measures. After treatment, half of the patients did not longer fill the criteria for their principal diagnosis. The treatment had a moderate effect (d) on anxiety and depressive symptoms. The effects of treatment were maintained at 1-year follow-up. There were no significant differences between group and individual treatment. Discussion.- The results indicate that treatments developed in efficacy settings can be implemented in ordinary outpatient clinics.'
+
+-- **Answer (GPT)**: Include. Criterion A is satisfied because the intervention is explicitly described as the original group version of Barrett's FRIENDS program, which is a FRIENDS-family CBT anxiety intervention. Criterion B is satisfied because the study evaluates anxiety and depressive symptoms and diagnostic status as outcomes (using the Anxiety Disorder Interview Schedule, Spence Children's Anxiety Scale, and Short Mood and Feelings Questionnaire). It is an empirical effectiveness study with comparison conditions (individual CBT and waitlist), not merely a single-group design or a non-empirical paper. Therefore it meets inclusion criteria for the review.
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+**STUDY-ID: 91101931:**
+
+-- **Title:** 'مقایسه اثربخشی روش بازیدرمانی شناختی-رفتاری و آموزش برنامه فرندز بر اختلالات رفتاری کودکان مبتلا به اختلال اضطراب جدایی'
+
+-- **Abstract**: 'Introduction: The purpose of this study was to compare the effectiveness of Cognitive-Behavioral Play Therapy and FRIENDS program training on behavioral disorders in children with separation anxiety disorder. Materials and Methods: The present study was a quasi-experimental and pretest-posttest design with two experimental and one control group. The statistical population of this study consisted of all children referred to Behavioral Disorders Clinics in west of Tehran who were selected by convenience sampling method. The first and second experimental groups received 10 sessions of 30 to 45 minutes of cognitive-behavioral game therapy and the FRIENDS program. The research tools were Achenbach s Child Behavior Checklist. Results: The results of the covariance analysis showed that the cognitive behavioral game therapy and the education program of FRIENDS was effective on behavioral disorders of children with separation anxiety disorder (P≤0.001). The results of comparing the effectiveness of the two approaches showed that play therapy had more effect on the improvement of behavioral disorders than the FRIENDS program (P≤0.001). Conclusion: Both Cognitive-Behavioral Play Therapy and FRIENDS Training can be used to improve behavioral disorders in children with separation anxiety disorder, but play therapy is more effective. [ABSTRACT FROM AUTHOR] Copyright of Medical journal of Mashhad University of Medical Sciences is the property of Mashhad University of Medical Science and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder s express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)'
+
+-- **Answer (GPT)**: The intervention is explicitly described as the FRIENDS program, which fits the definition of a FRIENDS-family intervention (criterion A met). The study is a quasi-experimental pretest-posttest design with two experimental groups (Cognitive-Behavioral Play Therapy and FRIENDS program) and one control group, so it includes comparison conditions and is not a single-group pre-post study. Outcomes are measured using Achenbach's Child Behavior Checklist and focus on behavioral disorders in children diagnosed with separation anxiety disorder, which involves internalizing/anxiety-related symptoms (criterion B met). It is an empirical intervention study, not a review or conceptual paper, and it reports on symptom-related outcomes rather than only implementation or satisfaction. Therefore, it should be included (decision = 1).
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 0
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-21
+
+&nbsp;
+
+
+
