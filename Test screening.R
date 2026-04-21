@@ -1,7 +1,7 @@
 # Test screening 
 
 # worstcase scenario having no internet
-load("screen objects/worst_case_objects.RData")
+# load("screen objects/worst_case_objects.RData")
 
 
 #install.packages("AIscreenR")
@@ -168,7 +168,7 @@ toc()
 load("screen objects/test_screening_results_incl_10reps.RData")
 
 
-performance <- 
+test_performance <- 
   test_result_obj |> 
   AIscreenR::screen_analyzer(
     # Specify variable name for the human decisions 
@@ -177,7 +177,7 @@ performance <-
     key_result = TRUE # Default
   )
 
-performance 
+test_performance 
 
 # Final included study vs. low recall model -----------------
 
@@ -245,7 +245,8 @@ report(
   file = "disagreement_report_for_testing",
   format = "html",
   document_title = "Screening Disagreement Review (Test Screening)",
-  open = TRUE
+  open = TRUE,
+  directory = paste0(getwd(), "/Screening reports")
 )
 
 

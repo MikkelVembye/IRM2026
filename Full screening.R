@@ -5,8 +5,9 @@ library(tidyverse)
 library(future) 
 library(tictoc)
 
+# Add options
 
-friends_dat <- readRDS("friends_dat.rds")
+friends_dat <- readRDS("Data/friends_dat.rds")
 
 prompt <- "We are screening titles and abstracts of studies for a systematic review about FRIENDS-family interventions for children/adolescents.
 
@@ -29,25 +30,29 @@ EXCLUDE if ANY are true:
 5) Outcomes are only non-symptom constructs (e.g., social skills/SEL, cooperation) with NO indication that anxiety/internalizing symptoms are being measured.
 "
 
-tic()
-plan(multisession)
+tic() # Tracking the time it takes to run the screening
+plan(multisession, workers = 10)
 
 result_obj <- 
   AIscreenR::tabscreen_gpt(
-    data = friends_dat[c(1:10, 2613:2618),], # The dataset containing the studies to be screened
+    data = friends_dat, # The dataset containing the studies to be screened
     prompt = prompt, # The prompt defined above
     studyid = eppi_id, # The column in the dataset that contains the study IDs
     title = title, # The column in the dataset that contains the study titles
     abstract = abstract, # The column in the dataset that contains the study abstracts
-    model = "gpt-4o-mini", # The model to use for screening
-    reps = 2, # Number of repetitions (set to 1 for this comparison)
-    decision_description = FALSE, # Whether to include the model's reasoning in the output (set to FALSE for this comparison)
-    overinclusive = TRUE, # Whether to overinclude studies (set to FALSE for this comparison)
+    model = "gpt-4o-mini", # The model to use for screening (This is the default)
+    overinclusive = TRUE, # Indicate if the model should be include studies where it is uncertain (Default is TRUE)
 ) 
-plan(sequential)
-toc()
 
-#save(result_obj, file = "friends_screening_results_10_reps.RData")
+plan(sequential)
+
+# Timing (not strictly needed just nice information to show you)
+t <- toc()
+elapsed <- t$toc - t$tic
+cat(sprintf("%d minutes and %d seconds\n", as.integer(elapsed %/% 60), as.integer(elapsed %% 60)))
+
+# Save the data
+save(result_obj, file = "screen objects/friends_screening_full.RData")
 
 answer_dat <- result_obj$answer_data
 

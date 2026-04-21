@@ -50,7 +50,7 @@ t <- toc()
 elapsed <- t$toc - t$tic
 cat(sprintf("%d minutes and %d seconds\n", as.integer(elapsed %/% 60), as.integer(elapsed %% 60)))
 
-save(result_obj, file = "friends_screening_results_reps.RData")
+save(result_obj, file = "screen objects/friends_screening_full.RData")
 
 performance <- 
   result_obj |> 
