@@ -244,7 +244,7 @@ report(
   final_decision_gpt_num = decision_binary,
   file = "disagreement_report_for_testing",
   format = "html",
-  document_title = "Screening Disagreement Review (Testing)",
+  document_title = "Screening Disagreement Review (Test Screening)",
   open = TRUE
 )
 
