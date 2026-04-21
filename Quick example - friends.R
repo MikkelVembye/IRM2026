@@ -6,7 +6,7 @@ library(future)
 library(tictoc)
 
 
-friends_dat <- readRDS("friends_dat.rds")
+friends_dat <- readRDS("Data/friends_dat.rds")
 
 prompt <- "We are screening titles and abstracts of studies for a systematic review about FRIENDS-family interventions for children/adolescents.
 
@@ -30,7 +30,7 @@ EXCLUDE if ANY are true:
 "
 
 tic() # Tracking the time it takes to run the screening
-plan(multisession)
+plan(multisession, workers = 10)
 
 result_obj <- 
   AIscreenR::tabscreen_gpt(
@@ -44,9 +44,13 @@ result_obj <-
 ) 
 
 plan(sequential)
-toc()
 
-#save(result_obj, file = "friends_screening_results_reps.RData")
+# Timing (not strictly needed just nice information to show you)
+t <- toc()
+elapsed <- t$toc - t$tic
+cat(sprintf("%d minutes and %d seconds\n", as.integer(elapsed %/% 60), as.integer(elapsed %% 60)))
+
+save(result_obj, file = "friends_screening_results_reps.RData")
 
 performance <- 
   result_obj |> 
