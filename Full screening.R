@@ -129,7 +129,7 @@ final_disagreements <-
   result_obj_with_descriptions$answer_data |> 
   filter(decision_binary != human_code) 
 
-report(
+AIscreenR::report(
   data = final_disagreements,
   studyid = eppi_id,
   title = title,
@@ -165,7 +165,7 @@ included_dat_for_ris <-
   select(-human_code) # Removing human code to avoid confusion 
 
 
-save_dataframe_to_ris(
+AIscreenR::save_dataframe_to_ris(
   included_dat_for_ris,
   file = "Ris files/final_included_by_gpt_studies.ris"
 )

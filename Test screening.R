@@ -39,7 +39,7 @@ options(dplyr.summarise.inform = FALSE) # Avoids summarize info from tidyverse
 
 tic()
 ris_dat_excl <- 
-  read_ris_to_dataframe("Ris files/friends_excl.ris") |> # Add the path to your RIS file here
+  AIscreenR::read_ris_to_dataframe("Ris files/friends_excl.ris") |> # Add the path to your RIS file here
   as_tibble() |>
   mutate(
     human_code = 0, #Tracking the human decision
@@ -51,7 +51,7 @@ toc()
 ris_dat_excl <- readRDS("Data/ris_dat_excl.rds")
 
 ris_dat_incl <- 
-  read_ris_to_dataframe("Ris files/friends_incl.ris") |> 
+  AIscreenR::read_ris_to_dataframe("Ris files/friends_incl.ris") |> 
   as_tibble() |>
   mutate(
     human_code = 1, #Tracking the human decision
@@ -247,7 +247,7 @@ toc()
 
 # Understand the screening behavior of gpt-5.1 on the discrepancies with human decisions -----------------
 
-report(
+AIscreenR::report(
   data = gpt5.1_dis_object$answer_data,
   studyid = eppi_id,
   title = title,
@@ -267,7 +267,7 @@ report(
 prompt <- prompt2
 
 app_prize_full <- 
-  approximate_price_gpt(
+  AIscreenR::approximate_price_gpt(
     data = friends_dat, # The dataset containing the studies to be screened
     prompt = prompt, # The prompt defined above
     studyid = eppi_id, # The column in the dataset that contains the study IDs
