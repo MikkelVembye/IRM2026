@@ -97,6 +97,7 @@ incl_sample <-
 
 test_dat <- 
   bind_rows(excl_sample, incl_sample) |> 
+  select(author, eppi_id, title, abstract, human_code) |> # Simplifying the dataset to only include relevant variables
   mutate(
     studyid = 1:n()
   ) |> 
