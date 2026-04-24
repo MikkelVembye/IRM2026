@@ -50,6 +50,7 @@ result_obj <-
     title = title, # The column in the dataset that contains the study titles
     abstract = abstract, # The column in the dataset that contains the study abstracts
     model = "gpt-4o-mini", # The model to use for screening (This is the default)
+    decision_description = FALSE,
     overinclusive = TRUE, # Indicate if the model should be include studies where it is uncertain (Default is TRUE)
 ) 
 
@@ -70,8 +71,11 @@ model_info <- result_dat$submodel |> unique()
 model_info
 
 ## Time 
-run_date <- result_dat$run_date |> unique()
+run_date <- result_obj$run_date
 run_date
+
+total_price <- result_obj$price_dollar
+total_price
 
 performance <- 
   result_obj |> 
