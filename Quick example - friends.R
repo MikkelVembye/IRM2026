@@ -40,6 +40,7 @@ result_obj <-
     title = title, # The column in the dataset that contains the study titles
     abstract = abstract, # The column in the dataset that contains the study abstracts
     model = "gpt-4o-mini", # The model to use for screening (This is the default)
+    decision_description = FALSE,
     overinclusive = TRUE, # Indicate if the model should be include studies where it is uncertain (Default is TRUE)
 ) 
 
@@ -50,15 +51,7 @@ t <- toc(quiet = TRUE)
 elapsed <- t$toc - t$tic
 cat(sprintf("%d minutes and %d seconds\n", as.integer(elapsed %/% 60), as.integer(elapsed %% 60)))
 
+result_obj
+result_obj$answer_data |> View()
+
 save(result_obj, file = "screen objects/friends_screening_full.RData")
-
-performance <- 
-  result_obj |> 
-  AIscreenR::screen_analyzer(
-    # Specify variable name for the human decisions 
-    human_decision = human_code,
-    # Specify whether only key results should be printed
-    key_result = TRUE # Default
-  )
-
-performance 
