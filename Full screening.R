@@ -20,7 +20,7 @@ friends_dat <- readRDS("Data/friends_dat.rds")
 
 prompt <- "We are screening titles and abstracts of studies for a systematic review about FRIENDS-family interventions for children/adolescents.
 
-INCLUDE (decision = 1) if ALL are true:
+INCLUDE if ALL are true:
 A) Intervention is FRIENDS-family OR clearly derived from it:
    - Explicitly named FRIENDS / FRIENDS for Life / Fun FRIENDS, OR
    - Explicitly described as an adaptation/translation/derivative of FRIENDS-family, OR
