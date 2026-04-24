@@ -173,7 +173,9 @@ test_result_obj <-
     model = c("gpt-4o-mini", "gpt-4o-mini", "gpt-5.1"), # The model to use for screening (gpt-4o-mini is the default)
     reps = c(1, 10, 1),
     overinclusive = TRUE # Indicate if the model should be include studies where it is uncertain (Default is TRUE)
-) 
+) # |> 
+# suppressWarnings()
+
 
 plan(sequential)
 toc()
