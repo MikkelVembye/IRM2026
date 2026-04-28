@@ -259,7 +259,7 @@ AIscreenR::report(
   human_code = human_code,
   final_decision_gpt_num = decision_binary,
   file = "disagreement_report_for_testing",
-  format = "html",
+  format = "docx",
   document_title = "Screening Disagreement Review (Test Screening)",
   open = TRUE,
   directory = paste0(getwd(), "/Screening reports")

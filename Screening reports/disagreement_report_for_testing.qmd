@@ -2,34 +2,12 @@
 title: " Screening Disagreement Review (Test Screening) "
 subtitle: " Full report "
 format:
-   html  
+   docx  
 ---
 
 #### **Disagreements**
 
 ##### **False exclusion**
-
-**STUDY-ID: 91154403:**
-
--- **Title:** 'School-based prevention of anxiety and depression: A pilot study in Sweden'
-
--- **Abstract**: 'Anxiety disorders are the most prevalent form of psychopathology in children. Anxiety disorders often begin early in life, involve great suffering, and predict psychiatric problems. Unfortunately, only a few children with anxiety disorders will receive effective treatment. The purpose of this study was to examine the effectiveness of FRIENDS for Life, an Australian school-based prevention programme, with children from Sweden. Participants were 50 children, and the impact of the programme was measured at three time points on the outcomes of anxiety, depression, and general mental health. Results showed a decrease in depressive symptoms and difficulties, and an increase in strengths, for those children receiving the programme. For those children at risk for anxiety receiving the programme, the results also showed a decrease in anxiety symptoms. Overall, the study suggests that FRIENDS for Life could be a promising intervention for Swedish children. (PsycINFO Database Record (c) 2016 APA, all rights reserved)'
-
--- **Answer (GPT)**: The intervention is clearly FRIENDS for Life and the study measures anxiety, depression, and general mental health, so it meets content criteria A and B. However, the abstract provides no indication of a comparison or control group; it describes results only for "those children receiving the programme" and labels the work as a pilot study, which is most consistent with a single-group pre-post design. Per the exclusion criteria, single-group studies of FRIENDS-family without a comparison/control group should be excluded. Therefore, this study should be excluded (decision = 0).
-
--- **Answer (GPT - numeric)**: 0
-
--- **Answer (Human)**: 1
-
-*Please add a comment on whether and why you agree with the GPT decision or not:*
-
-&nbsp;
-
--- **Model**: gpt-5.1-2025-11-13
-
--- **Run date**: 2026-04-20
-
-&nbsp;
 
 **STUDY-ID: 91101886:**
 
@@ -37,7 +15,7 @@ format:
 
 -- **Abstract**: 'Introduction: Anxiety symptoms in young children can have negative consequences such as the deterioration of family and interpersonal functioning, and may lead to the development of an anxiety disorder; therefore, the importance of prevention. Objective: The aim of this study was to evaluate the effectiveness of the Fun FRIENDS program in the reduction of children s anxiety symptoms and the promotion of emotional and behavioral competences as a protective factor in a sample of Mexican children. Methodology: The participants included 49 children from the first grade at elementary school along with their teachers. The program was implemented by teachers as twelve consecutive one-week sessions conducted in the classroom. The outcome was measured with a pretest-posttest quasi-experimental design. Measures included the Preschool Anxiety Scale (PAS) for parents, Behavioral and Emotional Rating Scale (BERS-2) for parents and Strengths and Difficulties Questionnaire (SDQ), for parents and teachers. Results: Findings showed a decrease in the subscale of separation anxiety of the PAS, an increase in the interpersonal, intrapersonal and affective strengths subscales of the BERS-2, and an increase in prosocial behavior as measured by the SDQ. Conclusions: Results indicate promise for the effectiveness of the Fun FRIENDS program as an early intervention program based on the promotion of resilience for Mexican children. (English) [ABSTRACT FROM AUTHOR] Introducción: los síntomas de ansiedad en niños pequeños pueden tener consecuencias negativas como el deterioro del funcionamiento familiar e interpersonal, y puede llevar al desarrollo de un trastorno de ansiedad; por ello, es importante la prevención. Objetivo: evaluar la efectividad del programa Fun FRIENDS en la reducción de los síntomas de la ansiedad de los niños y en la promoción de competencias emocionales y conductuales como un factor de protección en una muestra de niños mexicanos. Metodología: los participantes incluyeron 49 niños de primer grado en una escuela primaria junto a sus maestros. El programa fue implementado por los maestros en sesiones semanales realizadas en el aula durante 12 semanas consecutivas. El resultado se midió con un diseño cuasiexperimental pretest postest. Las medidas incluyeron la Preeschool Anxiety Scale (PAS) para padres, la Behavioral and Emotional Rating Scale (BERS-2) para padres y la Strengths and Difficulties Questionnare (SDQ) para padres y maestros. Resultados: los hallazgos muestran un decremento en la subescala de ansiedad por separación del PAS, un incremento en las subescalas interpersonales, intrapersonales y afectivas del BERS-2, y un incremento en el comportamiento prosocial de acuerdo con el SDQ. Conclusiones: los resultados sugieren el programa Fun FRIENDS promete ser efectivo como un programa de intervención temprana basada en la resiliencia de los niños mexicanos. (Spanish) [ABSTRACT FROM AUTHOR] Introdução: os sintomas de ansiedade em crianças pequenas podem ter consequências negativas, como comprometimento do funcionamento familiar e interpessoal, e podem levar ao desenvolvimento de um transtorno de ansiedade; portanto, a prevenção é importante. Objetivo: avaliar a eficácia do programa Fun FRIENDS na redução dos sintomas de ansiedade em crianças e na promoção de competências emocionais e comportamentais como fator de proteção em uma amostra de crianças mexicanas. Metodologia: Os participantes incluíram 49 alunos da primeira série de uma escola primária, juntamente com seus professores. O programa foi implementado pelos professores em sessões semanais realizadas em sala de aula durante 12 semanas consecutivas. O resultado foi medido com um desenho pós-teste de pré-teste quase experimental. As medidas incluíram a Escala de Ansiedade Pré-escolar (PAS) para os pais, a Escala de Avaliação Comportamental e Emocional (BERS-2) para os pais e o Questionário de Força e Dificuldades (SDQ) para pais e professores. Resultados: os achados mostram uma diminuição na subescala de ansiedade de separação do PAS, um aumento nas subescalas interpessoal, intrapessoal e afetiva do BERS-2 e um aumento no comportamento pró-social de acordo com o SDQ. Conclusões: os resultados sugerem que o programa Fun FRIENDS promete ser eficaz como um programa de intervenção precoce baseado na resiliência de crianças mexicanas. (Portuguese) [ABSTRACT FROM AUTHOR] Copyright of Pensando Psicología is the property of Universidad Cooperativa de Colombia and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder s express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)'
 
--- **Answer (GPT)**: The intervention clearly meets criterion A as it is explicitly identified as the Fun FRIENDS program, a recognized FRIENDS-family derivative. It also meets criterion B, as the study evaluates reduction of children’s anxiety symptoms and promotion of emotional and behavioral competencies, using standardized measures including the Preschool Anxiety Scale (PAS). However, the abstract describes a pretest-posttest quasi-experimental design with 49 first-grade children and their teachers, and does not mention any comparison or control group (e.g., no indication of randomization, group allocation, or non-equivalent comparison group). This implies a single-group pre-post evaluation of the Fun FRIENDS program. According to the exclusion criteria, single-group/arm studies of FRIENDS-family interventions without a comparison/control group should be excluded. Therefore, despite the appropriate intervention and outcomes, the study should be excluded (decision = 0) due to its single-group pre-post design without a clear comparison/control condition.
+-- **Answer (GPT)**: The intervention is clearly the Fun FRIENDS program, which matches the FRIENDS-family criterion (A), and the study explicitly measures anxiety and emotional/behavioral competences, satisfying outcome criterion (B). However, the methodology describes a pretest–posttest quasi-experimental design with 49 first-grade children and makes no mention of a comparison or control group. This strongly suggests a single-group pre–post evaluation of Fun FRIENDS only. According to the exclusion rules, single-group/one-arm FRIENDS-family studies with only a pre–post design and no comparison/control group must be excluded. Therefore, the correct decision is to exclude this study (decision = 0).
 
 -- **Answer (GPT - numeric)**: 0
 
@@ -49,7 +27,7 @@ format:
 
 -- **Model**: gpt-5.1-2025-11-13
 
--- **Run date**: 2026-04-20
+-- **Run date**: 2026-04-24
 
 &nbsp;
 
@@ -59,7 +37,7 @@ format:
 
 -- **Abstract**: 'The purpose of this study was to assess an open trial of the Fun FRIENDS program, as an early intervention for referred young children with internalizing symptoms, combined with the simultaneous administration of an adult resilience building program with parents. More specifically, 178 children, ranging in age from 5 to 7, and their parents participated in concurrent intervention programs, as children participated in the Fun FRIENDS program parents participated in the Strong Not Tough: Adult Resilience Program. Based on assessment from pre to post-intervention, significant improvements were found in both child and parent functioning, including reductions in internalizing symptoms and increases in levels of resilience. Also, for mothers, reduction in parent-related stress from pre to post-intervention predicted levels of child anxiety at post-intervention. Overall, the results of this study provide support for the positive impact of Fun FRIENDS enhanced with an adult resilience building program for parents. (PsycInfo Database Record (c) 2020 APA, all rights reserved)'
 
--- **Answer (GPT)**: The intervention evaluated is Fun FRIENDS, which is clearly a FRIENDS-family program, and outcomes include internalizing symptoms/anxiety and resilience, so criteria A and B are met. However, the abstract describes an open trial with pre- to post-intervention assessment only, and there is no indication of a comparison or control group. This matches exclusion criterion 2 (single-group pre-post FRIENDS intervention without a control/comparison arm). Therefore, the study should be excluded from the systematic review.
+-- **Answer (GPT)**: The intervention is Fun FRIENDS, which clearly qualifies as a FRIENDS-family program (criterion A met). The study also measures internalizing symptoms and child anxiety, so it meets criterion B regarding outcomes. However, the abstract describes the study explicitly as an open trial with assessment from pre- to post-intervention and provides no indication of any comparison or control group. This fits exclusion criterion 2: it is a single-group pre–post design with only a FRIENDS arm and no mentioned control/comparison group. Therefore, the study should be excluded (decision = 0).
 
 -- **Answer (GPT - numeric)**: 0
 
@@ -71,29 +49,7 @@ format:
 
 -- **Model**: gpt-5.1-2025-11-13
 
--- **Run date**: 2026-04-20
-
-&nbsp;
-
-**STUDY-ID: 91011189:**
-
--- **Title:** 'A Combined Intervention Targeting Both Teachers  and Students  Social-Emotional Skills: Preliminary Evaluation of Students  Outcomes'
-
--- **Abstract**: 'The literature indicates increasing evidence showing the benefits of classroom-based, universal preventive interventions for mental health and the link between social and emotional learning and academic performance. The FRIENDS program has been extensively tested and has showed promising results not only for preventing childhood anxiety, but also for improving students  self-concept, social skills and coping skills. However, when it comes to communities in disadvantage, the results are mixed, with some studies reporting the need to include enhancements to the context in which the program is implemented to better support communities at risk. A combined intervention aiming to promote students  social-emotional skills was piloted in a school located in a low socio-economic status area. Teachers received training to teach social and emotional skills for students and a resilience program for themselves. Students  social-emotional outcomes were assessed at pre, post, 3 and 6 months following the intervention. Results showed that the intervention helped students to decrease their anxiety, and the intervention was well accepted by participants.'
-
--- **Answer (GPT)**: The abstract describes a combined intervention targeting both teachers’ and students’ social-emotional skills, piloted in a low SES school. Although the FRIENDS program is discussed in the introduction as an example of effective classroom-based preventive interventions, the intervention under evaluation is not described as FRIENDS, FRIENDS for Life, Fun FRIENDS, or as an adaptation/derivative of FRIENDS. It is only said that teachers received training to teach social and emotional skills and a resilience program for themselves; there is no explicit link that this program is based on or informed by FRIENDS. Therefore, criterion A (FRIENDS-family or clearly derived) is not met. While the study does report anxiety reduction outcomes, satisfying criterion B, it fails the core inclusion requirement regarding the intervention type. Additionally, it appears to be a single-group pilot without a clearly described comparison/control group, which is an explicit exclusion criterion. For these reasons, the study should be excluded (decision = 0).
-
--- **Answer (GPT - numeric)**: 0
-
--- **Answer (Human)**: 1
-
-*Please add a comment on whether and why you agree with the GPT decision or not:*
-
-&nbsp;
-
--- **Model**: gpt-5.1-2025-11-13
-
--- **Run date**: 2026-04-20
+-- **Run date**: 2026-04-24
 
 &nbsp;
 
@@ -103,7 +59,7 @@ format:
 
 -- **Abstract**: 'Emotional disorders in children are common and although effective interventions are available comparatively few receive specialist help. School nurses were trained to deliver an evidence-based emotional health cognitive behaviour therapy programme, FRIENDS, to 106 non-referred children aged 9–10 attending three schools. Levels of anxiety and self-esteem were stable in the 6-month period before FRIENDS. Three months after completing FRIENDS, anxiety had significantly decreased and self-esteem increased. Children with the most severe emotional problems benefited from the programme. The value of delivering standardised evidence based programmes in schools by school nurses is discussed and the need for further research highlighted. [ABSTRACT FROM AUTHOR] Copyright of Child &amp; Adolescent Mental Health is the property of Wiley-Blackwell and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder s express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)'
 
--- **Answer (GPT)**: The intervention is clearly the FRIENDS emotional health CBT programme delivered in schools, and anxiety outcomes are explicitly measured and reported. However, the design described in the abstract appears to be a single-group pre–post evaluation: 106 non-referred children received FRIENDS, with anxiety and self-esteem compared over the 6-month period before FRIENDS and 3 months after completing FRIENDS. There is no indication of a comparison or control group, only within-group changes over time. According to the exclusion criteria, single-group/one-arm pre–post FRIENDS studies without a comparison/control group should be excluded. Therefore, this study is excluded (decision = 0).
+-- **Answer (GPT)**: The intervention is clearly the FRIENDS program and the study measures anxiety and self-esteem outcomes, satisfying criteria A and B. However, the abstract describes only a single-group pre–post design: 106 non-referred children received FRIENDS, with anxiety and self-esteem tracked before and after the program. There is no mention of a comparison or control group. According to the exclusion criteria, single-group/one-arm pre–post FRIENDS studies without a comparison/control group must be excluded. Therefore, this study should be excluded (decision = 0).
 
 -- **Answer (GPT - numeric)**: 0
 
@@ -115,7 +71,7 @@ format:
 
 -- **Model**: gpt-5.1-2025-11-13
 
--- **Run date**: 2026-04-20
+-- **Run date**: 2026-04-24
 
 &nbsp;
 
@@ -125,7 +81,7 @@ format:
 
 -- **Abstract**: 'Background: Despite the existence of evidence-based interventions for promoting mental health in children, the number of children at risk remains high. One of the reasons is that such interventions are not reaching specific groups at risk such as low socioeconomic status and ethnic minority groups. This study evaluated an adaptation of a school-based psychosocial program for nonreferred students aged 11 to 12 years attending a multicultural school from a low socioeconomic status area. Methods: The FRIENDS Program was adapted for a multicultural population. A quasi-experimental design was used, involving a pre/post-test, to evaluate the impact of the intervention on participants  outcomes on the Strengths and Difficulties Questionnaire (SDQ). Participants were divided into 2 categories ( at risk / not at risk ) based on their scores in the SDQ at pre-test. Post-test data were collected to evaluate the overall effectiveness and acceptability of the program. Results: Analyses showed significant improvement for the group initially identified as  at risk,  with 30% of the students being no longer at risk after the intervention. Most students rated the intervention as being highly acceptable and useful. Conclusions: Adaptations to existing evidence-based programs for implementation with specific minority groups at risk represents a promising approach to promote emotional health in children.'
 
--- **Answer (GPT)**: The intervention is clearly FRIENDS-based and targets emotional health using the SDQ, which includes internalizing/emotional symptoms subscales, so criteria A and B are satisfied. However, the abstract describes a quasi-experimental pre/post-test evaluation without mentioning any control or comparison group. Participants were only divided into "at risk" versus "not at risk" based on baseline SDQ scores, but there is no indication that one group served as a non-intervention control; rather, both appear to receive the FRIENDS program. This corresponds to a single-arm pre–post design, which per the exclusion criteria (2) must be excluded because there is no comparison/control group. Therefore, this study should be excluded from the review (decision = 0).
+-- **Answer (GPT)**: The intervention is clearly the FRIENDS Program (criterion A met) and it assesses emotional/behavioral outcomes via the Strengths and Difficulties Questionnaire (criterion B met). However, the design described is a quasi-experimental pre/post evaluation without any indication of a separate control or comparison group; participants are only divided into two risk categories ("at risk" vs. "not at risk") based on baseline SDQ scores, and all appear to receive the FRIENDS intervention. This matches the exclusion rule for a single-group pre-post FRIENDS study with no comparison/control arm. Therefore, the study should be excluded (decision = 0).
 
 -- **Answer (GPT - numeric)**: 0
 
@@ -137,7 +93,7 @@ format:
 
 -- **Model**: gpt-5.1-2025-11-13
 
--- **Run date**: 2026-04-20
+-- **Run date**: 2026-04-24
 
 &nbsp;
 
@@ -147,7 +103,7 @@ format:
 
 -- **Abstract**: 'The objective of this pilot project was to evaluate the effectiveness of the FRIENDS program in reducing anxiety and symptoms of depression for children in Regina public schools. The project comprised 461 children in Grades 1, 4, 5, and 6 who participated in the 10-week FRIENDS program between September 2013 and May 2014. Effectiveness of the program was measured using the Revised Children s Anxiety and Depression Scale, which was administered at the beginning and end of the program. The percentage of children with subclinical or clinical levels of anxiety and depression significantly decreased from 21.8% to 13.4%. This study validated the effectiveness of the FRIENDS program in children in Regina schools. Ce projet pilote avait pour but d évaluer l efficacité du programme FRIENDS à réduire les symptômes d anxiété et de dépression chez les enfants des écoles publiques de Regina. 461 enfants de 1e, 4e 5e et 6e années ont participé au programme FRIENDS de 10 semaines entre septembre 2013 et mai 2014. Pour mesurer l efficacité du programme, on s est servi de l Échelle révisée de mesure de l anxiété et de la dépression chez l enfant qui a été administrée au début et à la fin du programme. Le pourcentage des enfants manifestant des degrés infracliniques ou cliniques d anxiété et de dépression a considérablement diminué passant de 21,8% à 13,4%. Cette étude confirme l efficacité du programme FRIENDS chez les enfants des écoles de Regina.'
 
--- **Answer (GPT)**: The study evaluates the FRIENDS program (criterion A satisfied) and explicitly measures anxiety and depression outcomes using the Revised Children's Anxiety and Depression Scale (criterion B satisfied). However, the design described in the abstract is a single-group pre-post evaluation of 461 children who all participated in the 10-week FRIENDS program, with no mention of any comparison or control group. According to the exclusion criteria, single-group/one-arm FRIENDS studies without a control/comparison group must be excluded. Therefore, this study should be excluded (decision = 0).
+-- **Answer (GPT)**: The study evaluates the FRIENDS anxiety prevention program in Canadian schools and clearly measures anxiety and depressive symptoms using the Revised Children's Anxiety and Depression Scale, so criteria A and B are met. However, the abstract describes a pre-post evaluation of 461 children who all received the 10-week FRIENDS program, with measurements only at the beginning and end of the program and no mention of a comparison or control group. This makes it a single-group pre-post design, which must be excluded according to exclusion criterion 2 (single group/arm FRIENDS study with no comparison/control). Therefore, the appropriate decision is to exclude this study (decision = 0).
 
 -- **Answer (GPT - numeric)**: 0
 
@@ -159,20 +115,20 @@ format:
 
 -- **Model**: gpt-5.1-2025-11-13
 
--- **Run date**: 2026-04-20
+-- **Run date**: 2026-04-24
 
 &nbsp;
 
 
 #### **Agreements**
 
-**STUDY-ID: 91154275:**
+**STUDY-ID: 91154403:**
 
--- **Title:** 'A pilot study on the effectiveness of a school-based cognitive-behavioral anxiety intervention for 8- and 9-year-old children: A controlled trial in Japan'
+-- **Title:** 'School-based prevention of anxiety and depression: A pilot study in Sweden'
 
--- **Abstract**: 'Introduction: Many universal school-based preventative intervention trials for anxiety have been conducted in Western countries. This pilot study examined the efficacy and acceptability of a school-based, universal preventative program for anxiety among children aged 8–9 years in Japan. The program was based on cognitive-behavioral therapy (CBT) and was informed by similar universal programs (i.e., the Fun FRIENDS program; Barrett, 2007a, 2007b). Methods: Seventy-four children from a single school were allocated to an intervention or control group. The intervention comprised 10 CBT sessions, and assessments were conducted before and after the program. The primary outcome measure was the Spence Children s Anxiety Scale (SCAS) as children s self-report. Secondary outcome measures were the Depression Self-Rating Scale for Children (DSRS-C), Children s Hope Scale (Hope), Spence Children s Anxiety Scale-Parent Version (SCAS-P), and Strengths and Difficulties Questionnaire-Parent Version (SDQ-P). Results: The SCAS as the primary outcome showed no significant differences between the two groups. In addition, DSRS-C, Hope and SDQ-P also showed no significant differences. SCAS-P in the intervention group showed significant decrease compared to those in the control group. Conclusion: The results of this trial study suggest that a school-based universal preventative program for anxiety may have no significant effects on 8–9-year-old children. (PsycInfo Database Record (c) 2022 APA, all rights reserved)'
+-- **Abstract**: 'Anxiety disorders are the most prevalent form of psychopathology in children. Anxiety disorders often begin early in life, involve great suffering, and predict psychiatric problems. Unfortunately, only a few children with anxiety disorders will receive effective treatment. The purpose of this study was to examine the effectiveness of FRIENDS for Life, an Australian school-based prevention programme, with children from Sweden. Participants were 50 children, and the impact of the programme was measured at three time points on the outcomes of anxiety, depression, and general mental health. Results showed a decrease in depressive symptoms and difficulties, and an increase in strengths, for those children receiving the programme. For those children at risk for anxiety receiving the programme, the results also showed a decrease in anxiety symptoms. Overall, the study suggests that FRIENDS for Life could be a promising intervention for Swedish children. (PsycINFO Database Record (c) 2016 APA, all rights reserved)'
 
--- **Answer (GPT)**: The intervention is explicitly described as a school-based, universal CBT anxiety prevention program "informed by" the Fun FRIENDS program, which qualifies it as clearly derived from FRIENDS-family (criterion A). The study is a controlled trial with intervention and control groups, so it is not a single-arm pre-post design. It assesses anxiety and internalizing outcomes as primary and secondary measures: Spence Children's Anxiety Scale (child and parent versions), Depression Self-Rating Scale for Children, Children's Hope Scale, and Strengths and Difficulties Questionnaire, satisfying criterion B regarding measurement of anxiety/internalizing and emotional outcomes. It is an empirical evaluation, not a review or conceptual paper. Therefore, it meets the inclusion criteria and should be included (decision = 1).
+-- **Answer (GPT)**: Include. Criterion A is met because the intervention is explicitly identified as “FRIENDS for Life, an Australian school-based prevention programme,” which is a FRIENDS-family program. Criterion B is met because the study measures and reports effects on anxiety and depression outcomes, as well as general mental health, including changes in depressive and anxiety symptoms. The design appears to involve a comparison between children receiving the program and others (results are reported specifically for “those children receiving the programme,” and for “those children at risk for anxiety receiving the programme”), suggesting more than a single-arm pre–post design, so exclusion criterion 2 is not clearly met. There is an empirical evaluation with symptom outcomes, so none of the exclusion criteria apply. Therefore, the study should be included (decision = 1).
 
 -- **Answer (GPT - numeric)**: 1
 
@@ -184,7 +140,51 @@ format:
 
 -- **Model**: gpt-5.1-2025-11-13
 
--- **Run date**: 2026-04-20
+-- **Run date**: 2026-04-24
+
+&nbsp;
+
+**STUDY-ID: 91154275:**
+
+-- **Title:** 'A pilot study on the effectiveness of a school-based cognitive-behavioral anxiety intervention for 8- and 9-year-old children: A controlled trial in Japan'
+
+-- **Abstract**: 'Introduction: Many universal school-based preventative intervention trials for anxiety have been conducted in Western countries. This pilot study examined the efficacy and acceptability of a school-based, universal preventative program for anxiety among children aged 8–9 years in Japan. The program was based on cognitive-behavioral therapy (CBT) and was informed by similar universal programs (i.e., the Fun FRIENDS program; Barrett, 2007a, 2007b). Methods: Seventy-four children from a single school were allocated to an intervention or control group. The intervention comprised 10 CBT sessions, and assessments were conducted before and after the program. The primary outcome measure was the Spence Children s Anxiety Scale (SCAS) as children s self-report. Secondary outcome measures were the Depression Self-Rating Scale for Children (DSRS-C), Children s Hope Scale (Hope), Spence Children s Anxiety Scale-Parent Version (SCAS-P), and Strengths and Difficulties Questionnaire-Parent Version (SDQ-P). Results: The SCAS as the primary outcome showed no significant differences between the two groups. In addition, DSRS-C, Hope and SDQ-P also showed no significant differences. SCAS-P in the intervention group showed significant decrease compared to those in the control group. Conclusion: The results of this trial study suggest that a school-based universal preventative program for anxiety may have no significant effects on 8–9-year-old children. (PsycInfo Database Record (c) 2022 APA, all rights reserved)'
+
+-- **Answer (GPT)**: Include. Criterion A is met: the abstract explicitly states that the school-based universal preventative program for anxiety is CBT-based and "informed by similar universal programs (i.e., the Fun FRIENDS program; Barrett, 2007a, 2007b)," which qualifies it as derived from the FRIENDS-family intervention. Criterion B is met: the study clearly measures anxiety and internalizing outcomes, with the primary outcome being the Spence Children’s Anxiety Scale (SCAS) and secondary measures including the Depression Self-Rating Scale for Children (DSRS-C), Hope, SCAS-Parent Version, and SDQ-Parent Version. It is a controlled trial with an intervention and control group, so it is not excluded by the single-group design rule. The study is an empirical evaluation of a FRIENDS-informed program on anxiety-related outcomes and therefore should be included for further review.
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 1
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-24
+
+&nbsp;
+
+**STUDY-ID: 91011189:**
+
+-- **Title:** 'A Combined Intervention Targeting Both Teachers  and Students  Social-Emotional Skills: Preliminary Evaluation of Students  Outcomes'
+
+-- **Abstract**: 'The literature indicates increasing evidence showing the benefits of classroom-based, universal preventive interventions for mental health and the link between social and emotional learning and academic performance. The FRIENDS program has been extensively tested and has showed promising results not only for preventing childhood anxiety, but also for improving students  self-concept, social skills and coping skills. However, when it comes to communities in disadvantage, the results are mixed, with some studies reporting the need to include enhancements to the context in which the program is implemented to better support communities at risk. A combined intervention aiming to promote students  social-emotional skills was piloted in a school located in a low socio-economic status area. Teachers received training to teach social and emotional skills for students and a resilience program for themselves. Students  social-emotional outcomes were assessed at pre, post, 3 and 6 months following the intervention. Results showed that the intervention helped students to decrease their anxiety, and the intervention was well accepted by participants.'
+
+-- **Answer (GPT)**: The abstract discusses the FRIENDS program in the background section, highlighting its evidence base. However, when describing the actual study intervention, it refers only to "a combined intervention" in which teachers received training to teach social and emotional skills and a resilience program for themselves. It does not clearly state that the student intervention was the FRIENDS program, an adaptation/translation of FRIENDS, or a program explicitly based on or informed by FRIENDS. Thus, it is unclear whether the evaluated intervention is truly a FRIENDS-family intervention or merely another social-emotional/resilience program presented in the context of prior FRIENDS research. The study does meet criterion B, as it explicitly reports decreased student anxiety as an outcome. Because criterion A (intervention must be FRIENDS-family or clearly derived from it) cannot be confidently confirmed from the title and abstract alone, there is insufficient information to make a definitive include/exclude decision at this stage. Therefore, the most appropriate decision is "uncertain" (1.1) pending full-text review.
+
+-- **Answer (GPT - numeric)**: 1
+
+-- **Answer (Human)**: 1
+
+*Please add a comment on whether and why you agree with the GPT decision or not:*
+
+&nbsp;
+
+-- **Model**: gpt-5.1-2025-11-13
+
+-- **Run date**: 2026-04-24
 
 &nbsp;
 
